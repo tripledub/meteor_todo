@@ -3,7 +3,7 @@ import { Meteor } from 'meteor/meteor';
 
 import { Tasks } from '../api/tasks.js';
 
-// Task component - represents a sinfle todo item
+// Task component - represents a simple todo item
 export default class Task extends Component {
   deleteThisTask() {
     Meteor.call('tasks.remove', this.props.task._id);
